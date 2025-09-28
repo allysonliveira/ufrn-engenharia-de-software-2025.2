@@ -1,61 +1,33 @@
-# Eng-de-Software-UFRN
+# Projeto de Engenharia de Software - DCA - UFRN
 
 Repositório de exemplo para as atividades da disciplina de Engenharia de Software da UFRN.
 
+> *Repositório em construção, será atualizada durante a implementação do projeto.*
+
 ## Índice
 
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Como clonar ou baixar](#como-clonar-ou-baixar)  
 - [Estrutura do Projeto](#estrutura-do-projeto)  
 - [Licença](#licença)  
 
 ## Sobre o Projeto
 
 ### Título
-Título do Projeto
+"Meu Posto de Saúde"
 
 ### Descrição
-Descrição do seu projeto.
+Trata-se da implementação de um sistema web para utilização em rotinas de um posto de saúde, como cadastro de usuários (pacientes, médicos, enfermeiros, administradores, ect.), agendamento de consultas e exames, verificação de receitas médicas. 
 
 ### Componentes
-- Aluno(a) 1
-- Aluno(a) 2
-- Aluno(a) 3
+- ALLYSON MATHEUS GUEDES DE OLIVEIRA
+- DIEGO MEDEIROS PONTE
+- NICOLAS DANIEL DA ROCHA SILVA
 
-## Como clonar ou baixar
 
-Você pode obter este repositório de três formas:
-
-### Clonar via HTTPS
-
-```bash
 git clone https://github.com/mvapedrosa/Eng-de-Software-UFRN.git
-```
 
-Isso criará uma cópia local do repositório em sua máquina.
-
-### Clonar via SSH
-
-Se você já configurou sua chave SSH no GitHub, pode clonar usando:
-
-```bash
 git clone git@github.com:mvapedrosa/Eng-de-Software-UFRN.git
-```
-
-Isso criará uma cópia local do repositório em sua máquina.
-
-### Baixar como ZIP
-
-1. Acesse a página do repositório no GitHub:
-   [https://github.com/mvapedrosa/Eng-de-Software-UFRN](https://github.com/mvapedrosa/Eng-de-Software-UFRN)
-2. Clique no botão **Code** (verde).
-3. Selecione **Download ZIP**.
-4. Extraia o arquivo ZIP para o local desejado em seu computador.
-
 
 ## Estrutura do Projeto
-
-> *Esta seção pode variar conforme a organização do repositório de cada grupo.*
 
 ```
 Eng-de-Software-UFRN/
