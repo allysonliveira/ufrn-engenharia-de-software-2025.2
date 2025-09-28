@@ -1,8 +1,8 @@
 # Projeto de Engenharia de Software - DCA - UFRN
 
-Repositório de exemplo para as atividades da disciplina de Engenharia de Software da UFRN.
+Repositório referente às atividades da disciplina de Engenharia de Software, Departamento de Engenharia de Computação, Universidade Federal do Rio Grande do Norte.
 
-> *Repositório em construção, será atualizada durante a implementação do projeto.*
+> *Repositório em construção, será atualizado durante a implementação do projeto.*
 
 ## Índice
 
@@ -21,11 +21,6 @@ Trata-se da implementação de um sistema web para utilização em rotinas de um
 - ALLYSON MATHEUS GUEDES DE OLIVEIRA
 - DIEGO MEDEIROS PONTE
 - NICOLAS DANIEL DA ROCHA SILVA
-
-
-git clone https://github.com/mvapedrosa/Eng-de-Software-UFRN.git
-
-git clone git@github.com:mvapedrosa/Eng-de-Software-UFRN.git
 
 ## Estrutura do Projeto
 
