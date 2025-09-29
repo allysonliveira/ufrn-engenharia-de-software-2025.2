@@ -28,16 +28,15 @@ Trata-se da implementação de um sistema web para utilização em rotinas de um
 Eng-de-Software-UFRN/
 ├── LICENSE
 ├── README.md
-├── <diretório-x>/
-├── <diretório-y>/
-└── <diretório-z>/
+├── .gitignore
+├── docs/
+└──── historias-de-usuario.md
 ```
 
 - LICENSE: termos da licença do projeto (MIT).
 - README.md: este arquivo de apresentação.
-- X: descrição do diretório X.
-- Y: descrição do diretório Y.
-- Z: descrição do diretório Z.
+- .gitignore: arquivo de texto que indica ao Git quais arquivos ou diretórios ele deve ignorar e não rastrear deste repositório.
+- historias-de-usuario.md: arquivo de texto das histórias de usuário iniciais deste projeto
 
 ## Licença
 
