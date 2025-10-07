@@ -6,8 +6,10 @@ Repositório referente às atividades da disciplina de Engenharia de Software, D
 
 ## Índice
 
-- [Estrutura do Projeto](#estrutura-do-projeto)  
-- [Licença](#licença)  
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Arquitetura e Modelagem](#arquitetura-e-modelagem)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Licença](#licença)
 
 ## Sobre o Projeto
 
@@ -15,29 +17,44 @@ Repositório referente às atividades da disciplina de Engenharia de Software, D
 "Meu Posto de Saúde"
 
 ### Descrição
-Trata-se da implementação de um sistema web para utilização em rotinas de um posto de saúde, como cadastro de usuários (pacientes, médicos, enfermeiros, administradores, ect.), agendamento de consultas e exames, verificação de receitas médicas. 
+Trata-se da implementação de um sistema web para utilização em rotinas de um posto de saúde, como cadastro de usuários (pacientes, médicos, enfermeiros, administradores, ect.), agendamento de consultas e exames, verificação de receitas médicas.
 
 ### Componentes
 - ALLYSON MATHEUS GUEDES DE OLIVEIRA
 - DIEGO MEDEIROS PONTE
 - NICOLAS DANIEL DA ROCHA SILVA
 
-## Estrutura do Projeto
+## Arquitetura
 
-```
+A documentação da arquitetura, incluindo os diagramas UML estruturais e comportamentais do projeto, pode ser encontrada no diretório `uml/`. O arquivo principal de documentação descreve e justifica as escolhas de modelagem feitas pela equipe.
+
+* **[Documentação dos Diagramas](./uml/diagramas.md)**
+
+## Estrutura do Projeto
 Eng-de-Software-UFRN/
+├── docs/
+    └── historias-de-usuario.md
+└── uml/
+    └── diagrama-de-casos-de-uso.drawio
+    └── diagrama-de-casos-de-uso.png
+    └── diagrama-estrutural.drawio
+    └── diagrama-estrutural.png
+    └── diagramas.md
+├── .gitignore
+├── index.html
 ├── LICENSE
 ├── README.md
-├── .gitignore
-├── docs/
-└──── historias-de-usuario.md
-```
 
-- LICENSE: termos da licença do projeto (MIT).
+```
 - README.md: este arquivo de apresentação.
+- LICENSE: termos da licença do projeto (MIT).
 - .gitignore: arquivo de texto que indica ao Git quais arquivos ou diretórios ele deve ignorar e não rastrear deste repositório.
-- historias-de-usuario.md: arquivo de texto das histórias de usuário iniciais deste projeto
+- **docs/**: Contém a documentação de apoio ao projeto, como as histórias de usuário.
+- **uml/**: Contém os artefatos de modelagem UML, incluindo os arquivos editáveis (.drawio), as imagens (.png) e o documento de descrição dos diagramas.
+- **index.html**: Arquivo inicial da aplicação web.S
 
 ## Licença
 
 Este projeto está licenciado sob a **Licença MIT**. Veja o arquivo `LICENSE` para mais detalhes.
+
+
