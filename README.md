@@ -32,18 +32,27 @@ A documentação da arquitetura, incluindo os diagramas UML estruturais e compor
 
 ## Estrutura do Projeto
 Eng-de-Software-UFRN/
+
 ├── docs/
+
     └── historias-de-usuario.md
+    
 └── uml/
+
     └── diagrama-de-casos-de-uso.drawio
     └── diagrama-de-casos-de-uso.png
     └── diagrama-estrutural.drawio
     └── diagrama-estrutural.png
     └── diagramas.md
+    
 ├── .gitignore
+
 ├── index.html
+
 ├── LICENSE
+
 ├── README.md
+
 
 ```
 - README.md: este arquivo de apresentação.
