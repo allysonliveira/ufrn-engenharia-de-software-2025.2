@@ -24,44 +24,27 @@ Trata-se da implementação de um sistema web para utilização em rotinas de um
 - DIEGO MEDEIROS PONTE
 - NICOLAS DANIEL DA ROCHA SILVA
 
-## Arquitetura
-
-A documentação da arquitetura, incluindo os diagramas UML estruturais e comportamentais do projeto, pode ser encontrada no diretório `uml/`. O arquivo principal de documentação descreve e justifica as escolhas de modelagem feitas pela equipe.
-
-* **[Documentação dos Diagramas](./uml/diagramas.md)**
-
 ## Estrutura do Projeto
-Eng-de-Software-UFRN/
 
-├── docs/
+Descrição da organização do repositório, com as pastas e subdiretórios de cada parte do projeto.
 
-    └── historias-de-usuario.md
-    
-└── uml/
+    Eng-de-Software-UFRN/
 
-    └── diagrama-de-casos-de-uso.drawio
-    └── diagrama-de-casos-de-uso.png
-    └── diagrama-estrutural.drawio
-    └── diagrama-estrutural.png
-    └── diagramas.md
-    
-├── .gitignore
-
-├── index.html
-
-├── LICENSE
-
-├── README.md
+    ├── docs/
+        └── historias-de-usuario.md
+    ├── uml/
+        └── diagrama-de-casos-de-uso.drawio
+        └── diagrama-de-casos-de-uso.png
+        └── diagrama-estrutural.drawio
+        └── diagrama-estrutural.png
+        └── diagramas.md
 
 
-```
 
 - docs/: Contém a documentação de apoio ao projeto, como as histórias de usuário.
 - uml/: Contém os arquivos de modelagem UML, incluindo os arquivos editáveis (.drawio), as imagens (.png) e o documento de descrição dos diagramas.
 
-
 ## Licença
-
 Este projeto está licenciado sob a **Licença MIT**. Veja o arquivo `LICENSE` para mais detalhes.
 
 
