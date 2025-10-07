@@ -55,12 +55,10 @@ Eng-de-Software-UFRN/
 
 
 ```
-- README.md: este arquivo de apresentação.
-- LICENSE: termos da licença do projeto (MIT).
-- .gitignore: arquivo de texto que indica ao Git quais arquivos ou diretórios ele deve ignorar e não rastrear deste repositório.
-- **docs/**: Contém a documentação de apoio ao projeto, como as histórias de usuário.
-- **uml/**: Contém os artefatos de modelagem UML, incluindo os arquivos editáveis (.drawio), as imagens (.png) e o documento de descrição dos diagramas.
-- **index.html**: Arquivo inicial da aplicação web.S
+
+- docs/: Contém a documentação de apoio ao projeto, como as histórias de usuário.
+- uml/: Contém os arquivos de modelagem UML, incluindo os arquivos editáveis (.drawio), as imagens (.png) e o documento de descrição dos diagramas.
+
 
 ## Licença
 
