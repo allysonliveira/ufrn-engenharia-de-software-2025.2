@@ -32,6 +32,7 @@ Descrição da organização do repositório, com as pastas e subdiretórios de 
 
     ├── docs/
         └── historias-de-usuario.md
+        └── principios-de-projeto.md    
     ├── uml/
         └── diagrama-de-casos-de-uso.drawio
         └── diagrama-de-casos-de-uso.png
