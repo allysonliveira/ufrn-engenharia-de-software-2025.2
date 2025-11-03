@@ -4,7 +4,7 @@ Este documento detalha as Histórias de Usuário (User Stories) do projeto, com 
 
 ---
 
-Legenda: [AC1] = Critério de Aceitação 1; [AC2] = Critério de Aceitação 2; ... [ACT7] = Critério de Aceitação 7.
+Legenda: [AC1] = Critério de Aceitação 1; [AC2] = Critério de Aceitação 2; ... [AC7] = Critério de Aceitação 7.
 
 ### História 1 – Cadastro de Paciente
 
