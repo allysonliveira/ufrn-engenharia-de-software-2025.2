@@ -7,10 +7,10 @@ Repositório referente às atividades da disciplina de Engenharia de Software, D
 ## Índice
 
 - [Sobre o Projeto](#sobre-o-projeto)
-- [Status do Projeto: MVP Implementado](#status-do-projeto-mvp-implementado)
+- [Status do Projeto: MVP Web com Flask](#status-do-projeto-mvp-web-com-flask)
 - [Arquitetura e Modelagem (UML)](#arquitetura-e-modelagem-uml)
-- [Estrutura do Projeto](#estrutura-do-projeto)
 - [Como Executar o MVP](#como-executar-o-mvp)
+- [Estrutura do Projeto](#estrutura-do-projeto)
 - [Licença](#licença)
 
 ## Sobre o Projeto
@@ -19,18 +19,19 @@ Repositório referente às atividades da disciplina de Engenharia de Software, D
 "Meu Posto de Saúde"
 
 ### Descrição
-Trata-se da implementação de um sistema para utilização em rotinas de um posto de saúde, como cadastro de usuários (pacientes, médicos, enfermeiros, etc.), agendamento de consultas e exames, e verificação de receitas médicas.
+Trata-se da implementação de um sistema web para utilização em rotinas de um posto de saúde, como cadastro de usuários (pacientes, médicos, enfermeiros, etc.), agendamento de consultas e exames, e verificação de receitas médicas.
 
 ### Componentes
 - ALLYSON MATHEUS GUEDES DE OLIVEIRA
-- DIEGO MEDEIROS PONTE
 - NICOLAS DANIEL DA ROCHA SILVA
 
-# Fase atual do projeto: estruturação de MVP 
+## Status do Projeto: MVP Web com Flask
 
-O projeto atingiu a etapa de **Produto Mínimo Viável (MVP)**, com a implementação da funcionalidade central de cadastro de paciente.
+O projeto atingiu a etapa de **Produto Mínimo Viável (MVP)**. 
 
-A arquitetura do MVP foi construída em **Python**, utilizando **Tkinter** para a interface gráfica (GUI). O design aplica os Padrões de Projeto **Facade**, **Factory Method** e **Singleton** para garantir um código de baixo acoplamento e alta coesão.
+O backend é construído em **Python** (mantendo a lógica de negócio na pasta `src/`) e o frontend é construído com **HTML/CSS** (o arquivo `static/style.css`). O framework **Flask** é utilizado como a ponte que serve as páginas HTML e conecta a interface do usuário ao backend.
+
+O design da lógica de negócios aplica os Padrões de Projeto **Facade**, **Factory Method** e **Singleton** para garantir um código de baixo acoplamento e alta coesão.
 
 Para uma explicação detalhada da arquitetura e da aplicação dos padrões de projeto, consulte o relatório:
 
@@ -42,68 +43,92 @@ A modelagem UML (Diagrama de Casos de Uso, Diagrama de Classes) que serviu de ba
 
 * **[Documentação dos Diagramas UML](./uml/diagramas.md)**
 
-## Como Executar o MVP:
+## Como Executar o MVP
 
-1.  Certifique-se de ter o Python ou o Python 3 instalado (`python, python3`).
-2.  Clone o repositório e navegue até a pasta raiz do projeto.
-3.  Execute a aplicação através do módulo `main`:
+A aplicação agora roda como um servidor web local usando Flask.
 
+1.  **Clone o repositório:** Navegue até a pasta raiz do projeto.
+2.  **Crie o Ambiente Virtual** (só na primeira vez):
     ```bash
-    python src/main.py
+    python -m venv .venv
     ```
     ou
 
     ```bash
-    python3 src/main.py
+    python3 -m venv .venv
     ```
 
-4.  Insira um valor para "Nome Completo", "CPF" e "Cartão do SUS":
-O sistema irá responder que o cadastro foi feito e os padrões mínimos do MVP solicitados estão implementados.
+3.  **Ative o Ambiente Virtual:**
+    ```bash
+    source .venv/bin/activate
+    ```
+    *(Seu terminal mostrará `(.venv)` no início)*
+4.  **Instale as dependências** (só na primeira vez):
+    ```bash
+    pip install Flask
+    ```
+5.  **Execute o servidor Flask:**
+    ```bash
+    python -m venv .venv
+    ```
+    ou
+
+    ```bash
+    python3 app.py
+    ```
+6.  **Acesse o site:** Abra seu navegador e acesse: `http://127.0.0.1:5000`
 
 ## Estrutura do Projeto
-    ufrn-projeto-de-engenharia-de-software/
 
-    ├── docs/
-        └── historias-de-usuario.md
-        └── principios-de-projeto.md    
-        └── padroes-de-mvp.md 
+```bash
+ufrn-engenharia-de-software-2025.2/
+├── .venv/
+├── app.py
+├── docs/
+│   ├── historias-de-usuario.md
+│   ├── principios-de-projeto.md
+│   └── padroes-de-mvp.md
+├── src/
+│   ├── __init__.py
+│   ├── factories/
+│   │   ├── __init__.py
+│   │   └── usuario_factory.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── usuario.py
+│   └── services/
+│       ├── __init__.py
+│       ├── cadastro_facade.py
+│       └── logger_service.py
+├── static/
+│   └── style.css
+├── templates/
+│   ├── agendar.html
+│   ├── base.html
+│   ├── cadastro.html
+│   ├── dashboard.html
+│   └── index.html
+├── uml/
+│   ├── diagrama-de-casos-de-uso.drawio
+│   ├── diagrama-de-casos-de-uso.png
+│   ├── diagrama-estrutural.drawio
+│   ├── diagrama-estrutural.png
+│   └── diagramas.md
+├── .gitignore
+├── LICENSE
+└── README.md
+```
 
-    ├── src/
-        ├── factories/
-            └── usuario_factory.py
-    
-        ├── models/ 
-            └── usuario.py 
-
-        └── services/  
-            └── cadastro_facade.py 
-            └── logger_service.py 
-
-    ├── gui_app.py 
-    ├── main.py 
-
-    ├── uml/
-        └── diagrama-de-casos-de-uso.drawio
-        └── diagrama-de-casos-de-uso.png
-        └── diagrama-estrutural.drawio
-        └── diagrama-estrutural.png
-        └── diagramas.md
-
-    ├── .gitignore 
-    ├── LICENSE 
-    ├── README.md  
-
-
-
-
-- **`docs/`**: Contém a documentação de apoio (Histórias de Usuário, relatórios de princípios e padrões).
-- **`src/`**: Contém o código-fonte do MVP em Python.
+- **`app.py`**: O servidor web Flask. É o "coração" da aplicação que conecta tudo.
+- **`templates/`**: Contém todos os arquivos HTML que compõem o frontend (as páginas do site).
+- **`static/`**: Contém os arquivos de estilo (CSS), imagens e (futuramente) JavaScript.
+- **`src/`**: Contém toda a lógica de negócio do backend (Padrões de Projeto, etc.), separada da interface.
 - **`src/models/`**: Define as classes de entidade (ex: `Paciente`, `Medico`).
 - **`src/factories/`**: Contém o padrão Factory para a criação de objetos.
 - **`src/services/`**: Contém a lógica de negócio (Facade, Logger, etc.).
-- **`src/gui_app.py`**: A interface gráfica do usuário (em fase inicial).
-- **`src/main.py`**: Ponto de entrada para executar a aplicação.
+- **`docs/`**: Contém a documentação de apoio (Histórias de Usuário, relatórios de princípios e padrões).
 - **`uml/`**: Contém os artefatos de modelagem UML.
+- **`.venv/`**: Pasta do ambiente virtual do Python (ignorada pelo Git).
 
 ## Licença
 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Consulta - Meu Posto de Saúde</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Meu Posto de Saúde</div>
+            <ul>
+                <li><a href="/dashboard">Meu Painel</a></li>
+                <li><a href="/agendar">Agendar Consulta</a></li>
+                <li><a href="/">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Agendar Nova Consulta</h2>
+        
+        <form action="/buscar-horarios" method="GET">
+            <div class="form-group">
+                <label for="especialidade">Selecione a especialidade desejada:</label>
+                <select id="especialidade" name="especialidade">
+                    <option value="clinica-geral">Clínica Geral</option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="dermatologia">Dermatologia</option>
+                    <option value="ortopedia">Ortopedia</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Buscar Horários</button>
+        </form>
+    </main>
+</body>
+</html>
