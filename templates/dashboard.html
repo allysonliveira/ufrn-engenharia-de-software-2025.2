@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Posto de Saúde</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Meu Posto de Saúde</div>
+            <div class="logo">Projeto de Engenharia de Software</div>
+            <ul>
+                <li><a href="/dashboard">Meu Painel</a></li>
+                <li><a href="/agendar">Agendar Consulta</a></li>
+                <li><a href="/">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Olá, [Nome do Paciente]!</h2>
+        <p>Bem-vindo ao seu painel. Aqui você pode ver suas próximas consultas.</p>
+        
+        <h3 style="margin-top: 2rem;">Próximas Consultas</h3>
+        
+        <div style="border: 1px solid #ddd; padding: 1rem; border-radius: 5px;">
+            <p>Nenhuma consulta agendada no momento</p>
+        </div>
+    </main>
+</body>
+</html>
